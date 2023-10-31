@@ -1,0 +1,126 @@
+ /* common css start */
+h1,h2,h3,h4,h5,h6,ul,ol,li,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li{
+    list-style-type: none;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+h1,h2,h3{
+    font-family: 'PT Sans', sans-serif;
+}
+input, 
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+:root{
+    --primary-color:#fff;
+    --bg-color:#050202;
+}
+:root.dark{
+    --primary-color:#050202;
+    --bg-color:#fff;
+}
+
+/* common css end */
+/* nav css start */
+#primary-nav #menu ul li a{
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--primary-color);
+    padding: 5px 22px;
+    text-transform: uppercase;
+    line-height: 30px;
+    position: relative;
+}
+#primary-nav .navbar-brand img{
+    margin-left: 20px;
+}
+#primary-nav #menu ul li a::after{
+    content:'';
+    position: absolute;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #353535;
+    height: 1px;
+    transition: .5s;
+}
+#primary-nav #menu ul li a:hover:after{
+    width: 100%;
+    left: 0;
+}
+/* aside start */
+aside{
+    background-color: #fff;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transform: .5s;
+   
+}
+aside ul li a{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #353535;
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+aside ul li a:hover{
+    background-color: beige;
+}
+#menu_toggle{
+    position: fixed;
+    border: none;
+    top: 10px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    color: #ccc;
+    background-color: #686666;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    
+}
+.test{
+    opacity: o;
+    visibility: hidden;
+    
+}
+body{
+    background-color: var(--bg-color);
+}
+h3{
+    font-size: 23px;
+    font-family: sans-serif;
+    color: var(--primary-color);
+    margin-top: 50px;
+}
+
+.menu_icon{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #686666;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+/* aside end */
+/* nav css end */
